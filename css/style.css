@@ -1,0 +1,150 @@
+/*
+STYLE CSS
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+
+
+/***GENERAL***/
+
+body {
+	font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+
+a {
+	text-decoration: none;
+    color: black;
+
+}
+
+.img-resp {
+    width:100%;
+    height: auto;
+}
+
+li {
+	list-style-type: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.main-nav, .nav-flex, .main-nav h2 {
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+}
+
+.site-wrapper {
+	max-width: 1170px;
+}
+
+header {
+	background-color: whitesmoke;
+}
+
+h4, h3, p, h2 {
+    text-align: center;
+}
+
+.nav-flex a {
+			text-align: center;
+			display: block;
+			font-size: 1.2em;			
+			padding: .5em;
+            margin: 3px 0
+		}
+        
+        .site-wrapper {
+            margin: 0 5px;
+        }
+        
+        div.header img{
+            
+            max-width: 100%;
+            height: auto;
+            
+            
+        }
+        
+        div.header {
+            padding: 5%;
+        }
+
+        .portfolio,.skills {
+            display: flex;
+            flex-direction: column;
+        }
+
+/****SMALL TO MEDIUM SCREENS****/
+
+	@media all and (min-width: 768px){
+        
+        .nav-flex {
+            flex-direction: row;
+            align-self: center;
+        }
+        
+        li.nav1  {
+            padding: 0 5%;
+        }
+        
+        div.header {
+        padding: 5% 2%;
+        }
+        
+        .header {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+        
+        .header p {
+            text-align: left;
+            margin-right: 5%;
+        }
+        
+        .portfolio, .skills {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            
+        }
+		
+        .child-port, .child-skills {
+            max-width: 47%;
+        }
+	}
+
+/*****LARGE SCREEN*****/
+
+    @media all and (min-width: 1024px){
+    
+        /***GENERAL***/
+        
+        .child-port {
+            max-width: 30%;
+        }
+        
+        .child-skills {
+            max-width: 20%;
+        }
+        
+        .foot {
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        
+}
+
+
+
